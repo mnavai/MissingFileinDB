@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sort Employee Files</title>
-    </head>
-    <body>
-        <header>
-            <h1>Enter Employee's Info</h1>
-            
-        </header>
-    </body>
-</html>
+<head>
+	<title>Employee File</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2>Employee's Details</h2>
+	<p>
+		<label style="font-size: 15px;">First Name:</label>
+		<input type="text" id="first-name" placeholder="Enter your first name" required>
+	</p>
+	<p>
+		<label style="font-size: 15px;" placeholder="Enter your last name" required>Last Name:</label>
+		<input type="text" id="last-name">
+	</p>
+    <p>
+		<label for="id">ID:</label>
+        <input type="number" id="id" name="id" placeholder="Enter your ID" min="1" max="100" required>
+	</p>
+    <p>
+		<label for="phone">Contact:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+	</p>
+    <p>
+		<label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
+	</p>
+	<button id="save-btn">Save</button>
+</body>
+</html>
